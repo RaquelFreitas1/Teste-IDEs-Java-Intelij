@@ -1,4 +1,4 @@
-package br.com.dio.calculadora;
+5package br.com.dio.calculadora;
 
 import java.util.Scanner;
 
@@ -7,7 +7,7 @@ public class calculadora {
 
         Scanner scan = new Scanner (System.in);
 
-        int a, b;
+        double a, b;
 
         System.out.println("Digite o primeiro valor: ");
         a = scan.nextInt();
@@ -16,10 +16,10 @@ public class calculadora {
         b = scan.nextInt();
 
 
-        int somar = somar(a, b);
-        int subtrair = subtrair(a, b);
-        int multiplicar = multiplicar(a, b);
-        int dividir = dividir(a, b);
+        double somar = somar(a, b);
+        double subtrair = subtrair(a, b);
+        double multiplicar = multiplicar(a, b);
+        double dividir = dividir(a, b);
 
         System.out.println("Somar: " + somar);
         System.out.println("Subtrair: " + subtrair);
@@ -27,17 +27,17 @@ public class calculadora {
         System.out.println("Dividir: " + dividir);
     }
 
-    public static int somar (int a, int b){
+    public static double somar (double a, double b){
         return a + b;
     }
-    public static int subtrair (int a, int b){
+    public static double subtrair (double a, double b){
         return a - b;
 
     }
-    public static int multiplicar (int a, int b){
+    public static double multiplicar (double a, double b){
         return a * b;
 
-    }public static int dividir (int a, int b){
+    }public static double dividir (double a, double b){
         return a / b;
 
     }
